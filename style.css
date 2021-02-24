@@ -88,3 +88,68 @@ h1{
     background-color: red;
     color: white;
 }
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+
+    .main-container{
+        /* background-color: aqua; */
+        margin-top: -5vh;
+        width: 80vw;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        background-color:#686d6070;
+        border-radius: 0.7vw;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        align-items: center;
+        row-gap: 4vh;
+    }
+
+    .wrapper{
+        width: 70vw;
+        height: 30vh;
+        margin-top: 10vh;
+        display: flex;
+        flex-direction: column;
+        background-color:#daded4;
+        border-radius: 0.7vw;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        align-items: center;
+        row-gap: 4vh;
+    }
+
+
+
+
+    .time{
+        margin-top: 10vh;
+        font-size: 5vw;
+    }
+
+
+    .stopwatch-button{
+        margin-top: 2vh;
+        display: flex;
+        flex-direction: column;
+        row-gap: 1vh;
+        
+    }
+
+    .button{
+        width: 20vw;
+        height: 6vh;
+        border-radius: 0.52vw;
+        font-size: 2.5vh;
+        cursor: pointer;
+    }
+
+    #hour,
+    #minute,
+    #second,
+    #millisecond{
+        font-size: 5.8vh;
+    }
+
+}
