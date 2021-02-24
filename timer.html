@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=stylesheet href="timer.css">
+    <title>Timer</title>
+    <script defer src="timer.js"></script>
+</head>
+<body>
+    <div class="nav-bar">
+        <ul>
+            <li><a href="https://ulility-apps-home.netlify.app/">Home</a></li>
+            <li class="right"><a href="index.html">Stopwatch</a></li>
+            <!-- <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li> -->
+        </ul>
+    </div>
+
+    <h1>Timer</h1>
+<div class="like-body">
+<section class = "main-container">
+    <section class="wrapper">
+                
+            <div class="timer-box">
+                <!-- <label for="hour">Hours</label> -->
+                <input class="box" type="number" id="hour" max="99" min="0" placeholder="hh">
+            </div>
+
+            <div class="timer-box">
+                <!-- <label for="minute">Minutes</label> -->
+                <input class="box" type="number" id="minute" max="60" min="0" placeholder="mm">
+            </div>
+
+            <div class="timer-box">
+                <!-- <label for="second">Seconds</label> -->
+                <input class="box" type="number" id="second" max="60" min="0" placeholder="ss">
+            </div>
+
+            
+    </section>
+
+    <div class ="stopwatch-button">
+        <input class="button" type="button" value ="Start" id="start">
+        <input class="button" type="button" value="Reset" id="reset">
+    </div>
+
+</section>
+</div>
+
+</body>
+</html>

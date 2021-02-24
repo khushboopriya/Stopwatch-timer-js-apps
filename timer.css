@@ -4,6 +4,7 @@ body{
     margin:0;
 }
 
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -90,12 +91,18 @@ h1{
     height: 30vh;
     margin-top: 10vh;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     background-color:#daded4;
     border-radius: 0.7vw;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    justify-content: center;
     align-items: center;
-    row-gap: 4vh;
+    column-gap: 5vh;
+    /* margin-left: 20vh; */
+}
+.box{
+    height: 8vh;
+    width: 8vw;
 }
 
 .stopwatch-button{
@@ -128,6 +135,13 @@ h1{
     color: white;
 }
 
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    padding: 1vh;
+    margin-top: 0vh;
+    font-size: 4vh;
+    
+  }
+
 @media only screen 
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {
@@ -151,14 +165,17 @@ and (max-device-width : 480px) {
         height: 30vh;
         margin-top: 10vh;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         background-color:#daded4;
         border-radius: 0.7vw;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         align-items: center;
-        row-gap: 4vh;
+        column-gap: 2vw;
     }
-
+    .box{
+        height: 5vh;
+        width: 15vw;
+    }
 
 
 
@@ -191,4 +208,10 @@ and (max-device-width : 480px) {
         font-size: 5.8vh;
     }
 
+    ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        padding: 0.4vh;
+        margin-top: 0vh;
+        font-size: 4vh;
+        
+      }
 }
